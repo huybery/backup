@@ -44,17 +44,23 @@ match OverLength /\%81v.\+/
 
 
 
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
+" powerline 
+Plugin 'Lokaltog/vim-powerline'
+" rainbow
+Plugin 'luochen1990/rainbow'
+" auto close
+Plugin 'Raimondi/delimitMate'
 
 call vundle#end()            " required
 
-
+let g:rainbow_active = 1
 
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
